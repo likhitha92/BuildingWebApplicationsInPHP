@@ -1,11 +1,12 @@
 <html>
 <body>
-<title> Giduthuri Likhitha  </title>
+<title> Likhitha Giduthuri</title>
 <h1> Welcome to my guessing game</h1>
 
 <?php
-$correctnumber=26; //change this number //
-if(isset($_GET['guess']))
+$correctnumber=36; //change this number //
+
+if($_GET['guess'])
 {
   if (is_numeric($_GET['guess'])===FALSE)
  {
@@ -28,6 +29,9 @@ else
 {
 echo "Missing guess parameter <br> Your guess is too short";
 }
+
+
+
 ?>
 </body>
 </html>
